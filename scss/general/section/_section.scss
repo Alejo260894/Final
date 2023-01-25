@@ -1,0 +1,395 @@
+section div img {
+    width: 100%;
+}
+
+.conoce_mas {
+    width: 100%;
+    height: auto;
+    background: rgba(255, 211, 210, 0.15);
+
+    &_titulo {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: $color_titulos;
+        margin-top: 40.5px;
+    }
+
+    &_ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 96%;
+        max-width: 960px;
+        margin: 0px auto;
+        padding-bottom: 20px;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+    &_ofertas div {
+        width: 300px;
+        height: auto;
+
+    }
+}
+
+@each $color,
+$valor in $colors{
+    .conoce_mas_ofertas#{$color} {
+        background: $valor;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.mas_vendidos {
+    width: 100%;
+    height: auto;
+    background: $cabecera;
+
+    &_titulo {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: $color_titulos;
+        padding-top: 40.5px;
+    }
+
+    &_lista {
+        width: 100%;
+        height: auto;
+        padding: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+
+        &_mas {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 30px;
+            color: #E75313;
+        }
+    }
+
+    &_lista div {
+        width: 300px;
+        height: 380px;
+
+    }
+
+}
+
+.boton_ver_todo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.ciberdays {
+    width: 100%;
+    background: #E05851;
+
+    img {
+        width: 521px;
+        height: 518px;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .ciberdays img {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+
+//PAGE NUEVO
+.nuevo_cabecera {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: auto;
+    background: rgba(255, 211, 210, 0.15);
+
+    &_fondo {
+        background: #F8DADA;
+
+    }
+
+    img {
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .nuevo_cabecera img {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@keyframes efecto {
+    0% {
+        width: 100%;
+    }
+
+    25% {
+        width: 125%;
+    }
+
+    50% {
+        width: 150%;
+    }
+
+    75% {
+        width: 125%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+.nuevo_producto {
+    width: 100%;
+    background: $cabecera;
+
+    &_articulo {
+        width: 300px;
+        height: auto;
+    }
+
+    &_lista {
+        width: 100%;
+        padding: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+
+        &_mas div {
+            width: 300px;
+            height: 380px;
+
+        }
+    }
+}
+
+
+//PAGE NOSOTROS
+.nosotros_cabecera {
+    background: rgba(255, 211, 210, 0.15);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "a b";
+    grid-auto-columns: 50%;
+    justify-content: center;
+    align-content: center;
+    overflow: auto;
+
+
+    &_1 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        width: 100%;
+        grid-area: a;
+        height: 300px;
+        overflow: hidden;
+        padding: 50px 15px 20px 20px;
+    }
+
+    &_1_may {
+        font-size: 36px;
+        overflow: hidden;
+    }
+
+    &_2 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        width: 100%;
+        grid-area: b;
+        padding: 50px 15px 20px 20px;
+        align-self: flex-end;
+        grid-column-start: 2;
+        overflow: hidden;
+
+        p {
+            animation-duration: 3s;
+            animation-name: slidein;
+            overflow: hidden;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 100%
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+    }
+
+    &_3 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        height: 300px;
+        overflow: hidden;
+        padding: 50px 15px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .nosotros_cabecera {
+        background: rgba(255, 211, 210, 0.15);
+        display: flex;
+        flex-direction: column;
+
+        &_1 {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            width: 100%;
+
+            height: auto;
+            overflow: auto;
+            justify-self: start;
+            align-self: flex-start;
+            padding: 50px 10px 30px 10px;
+        }
+
+        &_1_may {
+            font-size: 36px;
+            overflow: auto;
+
+        }
+
+        &_2 {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            width: 100%;
+            padding: 40px 10px 30px 10px;
+            justify-self: normal;
+            overflow: auto;
+
+            p {
+                animation-duration: 3s;
+                animation-name: slidein;
+
+            }
+
+            @keyframes slidein {
+                from {
+                    margin-left: 100%;
+                    width: 100%
+                }
+
+                to {
+                    margin-left: 0%;
+                    width: 100%;
+                }
+            }
+        }
+
+        &_3 {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            height: auto;
+            overflow: auto;
+            margin: 10px;
+            margin: 50px 10px 30px 10px;
+        }
+    }
+}
+
+
+
+//CONTACTANOS
+
+
+.input_estilo {
+    width: 100%;
+    height: 30px;
+}
+
+//Importaciones
+.importaciones {
+    width: 100%;
+    background: rgba(255, 211, 210, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+    &_titulo {
+        height: auto;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: $color_titulos;
+    }
+
+    &_form {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+    }
+
+    &_linea {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin: 20px 0px 20px 0px;
+    }
+}

@@ -1,0 +1,89 @@
+.pie_de_pagina {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &_1 {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        margin: 96px;
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+        }
+    }
+
+    &_logo {
+        width: 150px;
+        height: 53px;
+    }
+
+    &_img {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+
+    }
+
+    _2 ul {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        margin: 96px;
+        list-style: none;
+
+        li {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+
+    &_3 {
+        margin: 300px 20px 50px 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .logo_footer {
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .correo_baby {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+}

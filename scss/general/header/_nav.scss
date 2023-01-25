@@ -1,0 +1,54 @@
+nav {
+    height: 92px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    div ul {
+        background-color: $cabecera;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 40px;
+    }
+
+    div a {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #414141;
+        text-decoration: none;
+    }
+}
+
+.menu {
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.iconos {
+    display: grid;
+    grid-template-columns: max-content 50px 50px;
+    justify-content: center;
+    align-content: center;
+
+    &_corazon {
+        box-sizing: border-box;
+        width: 18.69px;
+        height: 16.77px;
+    }
+}
+
+.bolsa_compra {
+    width: 20px;
+    height: 20px;
+    left: 90%;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
